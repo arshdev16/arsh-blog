@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg");
+  max-height: 60vh;
+  background-size: cover;
+  background-blend-mode: darken;
+  padding: 0;
+}
+.card {
+  display: flex;
+  margin: 0.7rem;
+  padding: 1rem;
+  border-radius: 15%;
+  color: white;
+  flex-direction: column;
+}
+.Subscribe {
+  background: none;
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+  padding: 0.5rem;
+  border-radius: 15%;
+  margin: 0.5rem;
+  height: 3rem;
+  width: 5rem;
+  transition: all 500ms ease-in-out 100ms;
+}
+.Subscribe:hover {
+  height: 3.5rem;
+  width: 5.5rem;
+}
+@media only screen and (min-width: 600px) {
+  .card {
+    max-width: 70%;
+    padding: 1rem;
+  }
+}
+
+/* https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg */

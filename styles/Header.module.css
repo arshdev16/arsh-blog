@@ -1,0 +1,91 @@
+.ParentContainer {
+  display: flex;
+  position: sticky;
+  flex-direction: column;
+  background-color:rgb(11,24,61);
+  background-size: cover;
+  justify-content: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+.HamburgerContainerOpen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+.HamburgerContainerClose {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+}
+
+.NavbarList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.anchor {
+  color: #fff;
+  text-decoration: none;
+}
+.NavbarText {
+  transition: all 500ms ease-in-out 100ms;
+  margin: 0.5rem;
+  padding: 0.1rem 2rem;
+}
+.NavbarText:hover {
+  border-bottom: 3px solid white;
+}
+.Subscribe {
+  background: none;
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+  padding: 0.5rem;
+  border-radius: 15%;
+  margin: 0.5rem;
+  height: 2rem;
+  display: inline;
+}
+
+.WebName {
+  margin: 1rem;
+}
+.ham {
+  filter: invert(1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.2rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .HamburgerContainerClose{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+  }
+  .ham{
+    display: none;
+  }
+  .NavbarList{
+    flex-direction: row;
+  }
+  .ParentContainer{
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+}
